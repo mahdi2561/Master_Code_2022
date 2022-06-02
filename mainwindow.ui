@@ -62,7 +62,7 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(0, 51, 76);
-color: rgb(0, 51, 76);</string>
+color: rgb(255, 255, 255);</string>
     </property>
     <property name="horizontalScrollBarPolicy">
      <enum>Qt::ScrollBarAlwaysOff</enum>
@@ -129,7 +129,8 @@ color: rgb(0, 51, 76);</string>
       </color>
      </property>
      <property name="icon">
-      <iconset theme="dark"/>
+      <iconset theme="dark">
+       <normaloff>.</normaloff>.</iconset>
      </property>
     </column>
     <column>

@@ -10,5 +10,6 @@
         <file>saveasicon.png</file>
         <file>saveicon.png</file>
         <file>newicon.png</file>
+        <file>loading.png</file>
     </qresource>
 </RCC>

@@ -6,6 +6,7 @@
 #include <ctype.h>
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include <QIcon>
 QString emptystring = "";
 using namespace std;
 MainWindow::MainWindow(QWidget *parent)
@@ -14,6 +15,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     setWindowTitle("Master Code 2022");
+    setWindowIcon(QIcon(":/new/prefix1/logo.png"));
     ui->editor->setFocus();
     on_reset_btn_clicked();
     this->setFixedSize(930,890);
