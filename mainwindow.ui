@@ -119,6 +119,9 @@ color: rgb(255, 255, 255);</string>
      <property name="font">
       <font>
        <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>true</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="background">
@@ -129,7 +132,7 @@ color: rgb(255, 255, 255);</string>
       </color>
      </property>
      <property name="icon">
-      <iconset theme="dark">
+      <iconset>
        <normaloff>.</normaloff>.</iconset>
      </property>
     </column>
@@ -140,6 +143,7 @@ color: rgb(255, 255, 255);</string>
      <property name="font">
       <font>
        <pointsize>12</pointsize>
+       <italic>true</italic>
       </font>
      </property>
      <property name="background">
@@ -157,6 +161,7 @@ color: rgb(255, 255, 255);</string>
      <property name="font">
       <font>
        <pointsize>12</pointsize>
+       <italic>true</italic>
       </font>
      </property>
      <property name="background">
@@ -174,6 +179,7 @@ color: rgb(255, 255, 255);</string>
      <property name="font">
       <font>
        <pointsize>12</pointsize>
+       <italic>true</italic>
       </font>
      </property>
      <property name="background">
@@ -216,7 +222,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(0, 29, 43);
-image: url(:/new/prefix1/saveicon.png);</string>
+image: url(:/new/prefix1/saveicon.png);
+color: rgb(0,0,0);
+</string>
     </property>
     <property name="text">
      <string/>
@@ -249,7 +257,9 @@ image: url(:/new/prefix1/saveicon.png);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(0, 29, 43);
 image: url(:/new/prefix1/openicon.png);
-padding: 2px;</string>
+padding: 2px;
+color: rgb(0,0,0);
+</string>
     </property>
     <property name="text">
      <string/>
@@ -283,6 +293,8 @@ padding: 2px;</string>
      <string notr="true">background-color: rgb(0, 29, 43);
 image: url(:/new/prefix1/newicon.png);
 padding:2px;
+color: rgb(0,0,0);
+
 </string>
     </property>
     <property name="text">
@@ -378,7 +390,9 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(0, 29, 43);
-image: url(:/new/prefix1/icons8-double-right-48.png);</string>
+image: url(:/new/prefix1/icons8-double-right-48.png);
+color: rgb(0,0,0);
+</string>
     </property>
     <property name="text">
      <string/>
@@ -415,6 +429,7 @@ image: url(:/new/prefix1/icons8-double-right-48.png);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(0, 29, 43);
+color: rgb(0,0,0);
 image: url(:/new/prefix1/play-60.png);</string>
     </property>
     <property name="text">
@@ -452,7 +467,9 @@ image: url(:/new/prefix1/play-60.png);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(0, 29, 43);
-image: url(:/new/prefix1/icons8-reset-48.png);</string>
+image: url(:/new/prefix1/icons8-reset-48.png);
+color: rgb(0,0,0);
+</string>
     </property>
     <property name="text">
      <string/>
@@ -489,7 +506,9 @@ image: url(:/new/prefix1/icons8-reset-48.png);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(0, 29, 43);
-image: url(:/new/prefix1/icons8-refresh-60.png);</string>
+image: url(:/new/prefix1/icons8-refresh-60.png);
+color: rgb(0,0,0);
+</string>
     </property>
     <property name="text">
      <string/>

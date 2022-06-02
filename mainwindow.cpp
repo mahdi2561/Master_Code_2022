@@ -16,6 +16,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     setWindowTitle("Master Code 2022");
     setWindowIcon(QIcon(":/new/prefix1/logo.png"));
+    //setStyleSheet("QMainWindow{border: 10px solid black;}");
     ui->editor->setFocus();
     on_reset_btn_clicked();
     this->setFixedSize(930,890);
@@ -38,10 +39,6 @@ void MainWindow::emptyTable()
         ui->ram_tb->insertRow(v);
         ui->ram_tb->setItem(v,1,itm);
         ui->ram_tb->setItem(v,3,empty);
-
-        // QPixmap pixmap("E:\code\temp\ ms3\play-60.png");
-         //QIcon iconBack(pixmap);
-        // ui->run_btn->setStyleSheet("border-image:url(:/pic/play-60.png);");
 
     }
 }
