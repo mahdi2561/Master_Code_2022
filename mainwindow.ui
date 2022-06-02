@@ -160,7 +160,7 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="font">
       <font>
-       <pointsize>12</pointsize>
+       <pointsize>10</pointsize>
        <italic>true</italic>
       </font>
      </property>
@@ -1234,7 +1234,7 @@ color: rgb(255, 255, 255);
    </widget>
    <widget class="QMenu" name="menuAssemble">
     <property name="title">
-     <string>compile and run</string>
+     <string>Compile</string>
     </property>
     <addaction name="actioncompile_program"/>
     <addaction name="actionRun_Program"/>

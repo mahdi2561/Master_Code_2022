@@ -7,6 +7,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QIcon>
+#include <windows.h>
 QString emptystring = "";
 using namespace std;
 MainWindow::MainWindow(QWidget *parent)
@@ -17,6 +18,11 @@ MainWindow::MainWindow(QWidget *parent)
     setWindowTitle("Master Code 2022");
     setWindowIcon(QIcon(":/new/prefix1/logo.png"));
     //setStyleSheet("QMainWindow{border: 10px solid black;}");
+    /*const INT val = COLOR_HIGHLIGHTTEXT;
+    const COLORREF color = RGB(0,0,0);
+    ::SetSysColors(1,&val,&color);*/
+    setWindowFlags(Qt::Window | Qt::BackgroundColorRole(RGB(0,0,0)));
+
     ui->editor->setFocus();
     on_reset_btn_clicked();
     this->setFixedSize(930,890);
