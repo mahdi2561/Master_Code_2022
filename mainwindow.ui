@@ -359,9 +359,9 @@ color: rgb(0,0,0);
     <property name="geometry">
      <rect>
       <x>370</x>
-      <y>770</y>
+      <y>630</y>
       <width>341</width>
-      <height>51</height>
+      <height>101</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -372,7 +372,7 @@ background-color: rgb(0, 51, 76);</string>
      <set>Qt::AlignCenter</set>
     </property>
     <property name="readOnly">
-     <bool>false</bool>
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLabel" name="test">
@@ -614,9 +614,9 @@ color: rgb(0,0,0);
     <property name="geometry">
      <rect>
       <x>370</x>
-      <y>630</y>
+      <y>770</y>
       <width>341</width>
-      <height>101</height>
+      <height>51</height>
      </rect>
     </property>
     <property name="minimumSize">
@@ -644,7 +644,7 @@ background-color: rgb(0, 51, 76);
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
     </property>
     <property name="readOnly">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="placeholderText">
      <string/>
