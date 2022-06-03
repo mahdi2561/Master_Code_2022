@@ -21,7 +21,6 @@ MainWindow::MainWindow(QWidget *parent)
     /*const INT val = COLOR_HIGHLIGHTTEXT;
     const COLORREF color = RGB(0,0,0);
     ::SetSysColors(1,&val,&color);*/
-    setWindowFlags(Qt::Window | Qt::BackgroundColorRole(RGB(0,0,0)));
 
     ui->editor->setFocus();
     on_reset_btn_clicked();
