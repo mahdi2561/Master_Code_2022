@@ -8,12 +8,15 @@
 #include "ui_mainwindow.h"
 #include <QIcon>
 #include <windows.h>
+#include <QtGui/QIcon>
+
 QString emptystring = "";
 using namespace std;
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
+    QIcon icon(":/new/prefix1/loading.png");
 
     ui->setupUi(this);
     setWindowTitle("Master Code 2022");
@@ -21,7 +24,10 @@ MainWindow::MainWindow(QWidget *parent)
     ui->editor->setFocus();
     on_reset_btn_clicked();
     this->setFixedSize(930,890);
+
 }
+
+
 void MainWindow::closeEvent (QCloseEvent *event)
 {
 

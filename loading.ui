@@ -25,6 +25,9 @@
      <height>691</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>WaitCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">image: url(:/new/prefix1/loading.png);</string>
    </property>
