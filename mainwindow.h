@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 #include<bitset>
 #include <QMainWindow>
+#include <QCloseEvent>
 #include<map>
 using namespace std;
 QT_BEGIN_NAMESPACE
@@ -14,6 +15,7 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    void closeEvent (QCloseEvent *event);
     inline quint16 getE() { return E.to_ulong(); }
     inline quint16 getDR() { return DR.to_ulong(); }
     inline quint16 getAC() { return AC.to_ulong(); }

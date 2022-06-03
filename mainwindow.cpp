@@ -14,22 +14,63 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
+
     ui->setupUi(this);
     setWindowTitle("Master Code 2022");
     setWindowIcon(QIcon(":/new/prefix1/logo.png"));
-    //setStyleSheet("QMainWindow{border: 10px solid black;}");
-    /*const INT val = COLOR_HIGHLIGHTTEXT;
-    const COLORREF color = RGB(0,0,0);
-    ::SetSysColors(1,&val,&color);*/
-
     ui->editor->setFocus();
     on_reset_btn_clicked();
     this->setFixedSize(930,890);
 }
+void MainWindow::closeEvent (QCloseEvent *event)
+{
 
+        event->ignore();
+        QMessageBox::StandardButton resBtn = QMessageBox::question( this,"Master Code 2022",
+                                                                    tr("Do you want save your changes before exit?\n"),
+                                                                    QMessageBox::No | QMessageBox::Yes | QMessageBox::Cancel
+                                                                    ,QMessageBox::Yes );
+
+        if ( resBtn != QMessageBox::Yes)
+        {
+            event->ignore();
+            if(resBtn != QMessageBox::Cancel)
+              event->accept();
+        }
+        else if(resBtn == QMessageBox::Yes)
+        {
+            event->ignore();
+            if(issaved==emptystring)
+            {
+                QString fileName = QFileDialog::getSaveFileName(this,tr("Save"), "",tr("Mytext editor file (*.txt)"));
+                 if (fileName.isEmpty())
+                     return;
+                 else {
+                    ofstream f;
+                    f.open(fileName.toLocal8Bit(),ios::out);
+                    f<<ui->editor->toPlainText().toStdString();
+                    f.flush();
+                    f.close();
+                    issaved=fileName;
+                    event->accept();
+                }
+            }
+            else
+            {
+                ofstream f;
+                f.open(issaved.toLocal8Bit(),ios::out);
+                f<<ui->editor->toPlainText().toStdString();
+                f.flush();
+                f.close();
+                event->accept();
+            }
+        }
+        else if(resBtn == QMessageBox::Close)
+          event->ignore();
+}
 MainWindow::~MainWindow()
 {
-    delete ui;
+     delete ui;
 }
 
 void MainWindow::emptyTable()
@@ -44,10 +85,8 @@ void MainWindow::emptyTable()
         ui->ram_tb->insertRow(v);
         ui->ram_tb->setItem(v,1,itm);
         ui->ram_tb->setItem(v,3,empty);
-
     }
 }
-
 void MainWindow::resetRam()
 {
     for(int i=0;i<4096;i++)
@@ -161,11 +200,7 @@ void MainWindow::arithmeticUnitCIL() {
 
 void MainWindow::on_action_Exit_triggered()
 {
-    QMessageBox::warning(this, tr("Master Code"),
-                         tr("Do you want save your changes before exit?!!"),
-                          QMessageBox::Save | QMessageBox::Discard
-                          | QMessageBox::Cancel, QMessageBox::Save);
-    this->close();
+    this -> close();
 }
 
 void MainWindow::on_actionnext_step_triggered()
@@ -207,7 +242,6 @@ void MainWindow::on_actionSave_as_triggered()
         f.close();
         issaved=fileName;
     }
-
 }
 
 void MainWindow::on_action_Save_triggered()
@@ -1387,6 +1421,6 @@ void MainWindow::on_next_btn_clicked()
 void MainWindow::on_actionAbout_Mano_simulator_triggered()
 {
     QMessageBox msgBox;
-    msgBox.setText("ARYA's basic mano computer. This program writed using C++ & QT framework and the source in my github account:\nhttps://github.com/arsalanyavari/mano-simulator    :)");
+    msgBox.setText("Master Code 2022's basic Mano computer. This program is created by using C++ & QT framework by Alireza Peymanirad and Mahdi Aghajanian .");
     msgBox.exec();
 }

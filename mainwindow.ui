@@ -1467,7 +1467,7 @@ p, li { white-space: pre-wrap; }
     <string>&amp;Exit</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+W</string>
+    <string>Esc</string>
    </property>
   </action>
   <action name="action_New">
