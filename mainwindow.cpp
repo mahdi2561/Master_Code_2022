@@ -161,7 +161,7 @@ void MainWindow::arithmeticUnitCIL() {
 
 void MainWindow::on_action_Exit_triggered()
 {
-    QMessageBox::warning(this, tr("ARYA Application"),
+    QMessageBox::warning(this, tr("Master Code"),
                          tr("Do you want save your changes before exit?!!"),
                           QMessageBox::Save | QMessageBox::Discard
                           | QMessageBox::Cancel, QMessageBox::Save);

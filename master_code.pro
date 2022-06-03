@@ -25,6 +25,7 @@ HEADERS += \
     mainwindow.h
 
 FORMS += \
+    loading.ui \
     mainwindow.ui
 
 # Default rules for deployment.

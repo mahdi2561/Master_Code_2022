@@ -260,7 +260,7 @@ color: rgb(255,255, 255);</string>
      <enum>Qt::PreventContextMenu</enum>
     </property>
     <property name="toolTip">
-     <string>save</string>
+     <string>save (ctrl + S)</string>
     </property>
     <property name="statusTip">
      <string>save file</string>
@@ -297,7 +297,7 @@ color: rgb(0,0,0);
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="toolTip">
-     <string>open file</string>
+     <string>open file (ctrl + O)</string>
     </property>
     <property name="statusTip">
      <string>open your code file</string>
@@ -332,7 +332,7 @@ color: rgb(0,0,0);
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="toolTip">
-     <string>new window</string>
+     <string>new window (ctrl + N)</string>
     </property>
     <property name="statusTip">
      <string>New code window</string>
@@ -431,7 +431,7 @@ color: rgb(255, 255, 255);</string>
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="toolTip">
-     <string>next step</string>
+     <string>next step (F9)</string>
     </property>
     <property name="statusTip">
      <string>step by step running</string>
@@ -470,7 +470,7 @@ color: rgb(0,0,0);
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="toolTip">
-     <string>run all</string>
+     <string>run all (F5)</string>
     </property>
     <property name="statusTip">
      <string>run program compleatly</string>
@@ -508,10 +508,10 @@ image: url(:/new/prefix1/play-60.png);</string>
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="toolTip">
-     <string>clear table</string>
+     <string>reset code (ctrl + L)</string>
     </property>
     <property name="statusTip">
-     <string>clear table window</string>
+     <string>reset code</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(0, 29, 43);
@@ -547,7 +547,7 @@ color: rgb(0,0,0);
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="toolTip">
-     <string>compile</string>
+     <string>compile (ctrl + shift + C)</string>
     </property>
     <property name="statusTip">
      <string>compile</string>
@@ -1507,7 +1507,7 @@ p, li { white-space: pre-wrap; }
     <string>next step</string>
    </property>
    <property name="shortcut">
-    <string>F9, F10</string>
+    <string>F9</string>
    </property>
   </action>
   <action name="actionreset_code">
